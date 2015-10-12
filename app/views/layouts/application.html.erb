@@ -14,18 +14,17 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= month_calendar events: @sessions do |date, sessions| %>
-    <%= date %>
+    <%= week_calendar number_of_weeks: 7, events: @sessions do |date, sessions| %>
+      <%= date %>
 
       <% sessions.each do |session| %>
-
         <div>
           <%= session.name %>
         </div>
-
       <% end %>
-
+      
     <% end %>
 
   </body>
 </html>
+

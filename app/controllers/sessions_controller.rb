@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
-  before_action :set_session, only: [:show, :edit, :update, :destroy]
+  before_action :set_session, 
+                only: [:show, :edit, :update, :destroy]
 
   # GET /sessions
   # GET /sessions.json
@@ -10,6 +11,7 @@ class SessionsController < ApplicationController
   # GET /sessions/1
   # GET /sessions/1.json
   def show
+    
   end
 
   # GET /sessions/new

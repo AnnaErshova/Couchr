@@ -6,5 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
-Session.create(name: '3min jog', start_time: Date.today)
+Session.create(name: '3min jog -- nonstop', start_time: DateTime.new(2015,10,13))
+Session.create(name: '3.5min jog -- nonstop', start_time: DateTime.new(2015,10,15))
+Session.create(name: '3.5min jog -- nonstop', start_time: DateTime.new(2015,10,17))
+Session.create(name: '5k!!!', start_time: DateTime.new(2015,11,26))
