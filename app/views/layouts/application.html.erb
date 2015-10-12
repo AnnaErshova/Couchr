@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Calendar</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-  <%= analytics_init if Rails.env.production? %>
-</head>
-<body>
+  <head>
+    <title>Calendar</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= analytics_init if Rails.env.production? %>
+  </head>
 
-<%= yield %>
+  <body>
 
-</body>
+  <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+<!--     <%= month_calendar do |date| %>
+      <%= date %>
+    <% end %> -->
+
+    <%= month_calendar events: @sessions do |date, sessions| %>
+    <%= date %>
+
+      <% sessions.each do |session| %>
+
+        <div>
+          <%= session.name %>
+        </div>
+
+      <% end %>
+
+    <% end %>
+
+  </body>
 </html>
