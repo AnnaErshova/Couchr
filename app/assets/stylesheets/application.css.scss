@@ -20,11 +20,16 @@
  */
 @import "bootstrap";
 /* Some Style from the Bootstrap Default Theme */
+
 body {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 70px;
   padding-left: 70px
+}
+
+#schedule-header {
+  font-size: 22px
 }
 
 .theme-dropdown .dropdown-menu {
@@ -37,8 +42,23 @@ body {
   margin: 5px 0;
 }
 
+#race-link {
+  color: black;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+body > div.simple-calendar {
+  color: blue
+}
+
+body > table.table.table-striped {
+  border: 1px solid black;
+  text-align: center
+}
+
 .simple-calendar {
-  .day {color: red}
+  .day {}
   .month {}
   .wday-0 {}
   .wday-1 {}

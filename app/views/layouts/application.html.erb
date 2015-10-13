@@ -11,8 +11,9 @@
   <body>
 
   <%= yield %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<!--     <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
+    <p id="race-link">You will be running <a href="http://www.franklinparkcoalition.org/turkey-trot-5k/">Franklin Park Turkey Trot on Nov 26!</a></p>
 
     <%= week_calendar number_of_weeks: 7, events: @sessions do |date, sessions| %>
       <%= date %>
@@ -22,7 +23,7 @@
           <%= session.name %>
         </div>
       <% end %>
-      
+
     <% end %>
 
   </body>
