@@ -5,7 +5,7 @@
 
   <table class="table table-striped">
     
-    <thead>
+    <thead id="table-striped-daynames">
       <tr>
         <% date_range.slice(0, 7).each do |day| %>
           <th><%= I18n.t("date.abbr_day_names")[day.wday] %></th>

@@ -57,6 +57,15 @@ body > table.table.table-striped {
   text-align: center
 }
 
+td, th {
+  border: solid 1px black;
+}
+
+tr, th {
+  text-align: center;
+  background-color: #E6B2CC
+}
+
 .simple-calendar {
   .day {}
   .month {}
