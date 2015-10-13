@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :races
+
   resources :sessions
 
   devise_for :ys
