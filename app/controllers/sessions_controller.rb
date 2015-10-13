@@ -1,6 +1,8 @@
 class SessionsController < ApplicationController
   before_action :set_session, 
                 only: [:show, :edit, :update, :destroy]
+  # no sessions access if not signed in
+  before_action :authenticate_user!, except: [:index, :show]
 
   # GET /sessions
   # GET /sessions.json
@@ -16,7 +18,8 @@ class SessionsController < ApplicationController
 
   # GET /sessions/new
   def new
-    @session = Session.new
+    # @session = Session.new
+    @session = current_user.posts.build
   end
 
   # GET /sessions/1/edit
@@ -26,7 +29,8 @@ class SessionsController < ApplicationController
   # POST /sessions
   # POST /sessions.json
   def create
-    @session = Session.new(session_params)
+    # @session = Session.new(session_params)
+    @session = current_user.posts.build(session_params)
 
     respond_to do |format|
       if @session.save

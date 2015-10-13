@@ -42,6 +42,12 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # visualizes db schema
+  gem 'rails-erd'
+
+  # allows multi-role user authorization
+  gem 'pundit'
 end
 
 group :test, :development do
@@ -57,6 +63,8 @@ group :test, :development do
   gem 'pry'
   gem 'guard-rspec', require: false
   gem 'thin'
+  gem 'shoulda-matchers'
+  gem 'faker'
 end
 
 group :production do

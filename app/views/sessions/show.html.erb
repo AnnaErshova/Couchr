@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<h1>Listing Sessions:</h1>
+
+<!-- <p>
   <strong>Name:</strong>
   <%= @session.name %>
 </p>
@@ -8,7 +10,19 @@
 <p>
   <strong>Start time:</strong>
   <%= @session.start_time %>
-</p>
+</p> -->
+
+<% if session.user == current_user %>
+  <tbody>
+  <% @sessions.each do |session| %>
+    <tr>
+      <td><%= session.name %></td>
+      <td><%= session.start_time %></td
+    </tr>
+  <% end %>
+  </tbody>
+<% end %>
+
 
 <%= link_to 'Edit', edit_session_path(@session) %> |
 <%= link_to 'Back', sessions_path %>
