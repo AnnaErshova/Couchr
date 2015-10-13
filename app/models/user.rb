@@ -8,9 +8,10 @@ class User < ActiveRecord::Base
          :trackable, 
          :validatable
 
-  # sets up authorization scenarios
+  # sets up authorization scenarios according to location in the array
   enum role: [:user, :admin]
-  after_initialize :set_default_role, :if => :new_record?
+  after_initialize :set_default_role, 
+                    :if => :new_record?
 
   # user can have many training sessions and many races
   has_many :sessions
