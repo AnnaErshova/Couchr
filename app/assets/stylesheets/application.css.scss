@@ -63,7 +63,32 @@ td, th {
 
 tr, th {
   text-align: center;
-  background-color: #E6B2CC
+  background-color: #A79CA1
+}
+
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-1.today.start-date.current-month.has-events, 
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-2.future.current-month.has-events, 
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-3.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-4.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-5.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-6.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(1) > td.day.wday-7.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-1.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-2.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-3.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-4.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-5.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-6.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(2) > td.day.wday-7.future.current-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-1.future.next-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-2.future.next-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-3.future.next-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-4.future.next-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-5.future.next-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-6.future.next-month.has-events,
+body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-7.future.next-month.has-events
+ {
+  background-color: #D3CED0
 }
 
 .simple-calendar {
