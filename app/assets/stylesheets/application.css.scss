@@ -22,14 +22,16 @@
 /* Some Style from the Bootstrap Default Theme */
 
 body {
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 30px;
   padding-right: 70px;
   padding-left: 70px
 }
 
-#schedule-header {
-  font-size: 22px
+#schedule-header,
+#race-header {
+  font-size: 22px;
+  margin-top: 0px
 }
 
 .theme-dropdown .dropdown-menu {
@@ -46,6 +48,10 @@ body {
   color: black;
   font-size: 16px;
   padding-bottom: 20px;
+}
+
+#race-info-statement {
+  padding-bottom: 10px
 }
 
 body > div.simple-calendar {
@@ -89,6 +95,10 @@ body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-6.futur
 body > table.table.table-striped > tbody > tr:nth-child(7) > td.day.wday-7.future.next-month.has-events
  {
   background-color: #D3CED0
+}
+
+#map {
+  margin-top: 30px;
 }
 
 .simple-calendar {
