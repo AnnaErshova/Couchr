@@ -11,3 +11,5 @@ Session.create(name: '3.5min jog -- nonstop', start_time: DateTime.new(2015,10,1
 Session.create(name: '3.5min jog -- nonstop', start_time: DateTime.new(2015,10,17))
 Session.create(name: '5k!!!', start_time: DateTime.new(2015,11,26))
 # Race.create(name: 'Franklin Park Turkey Trot', latitude: 42.303815, longitude: -71.094346)
+User.create(email: 'anna.ershova@gmail.com', password: 'password', password_confirmation: 'password' , role: 1)
+  
